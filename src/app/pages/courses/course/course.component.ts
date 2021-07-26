@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-course',
@@ -12,5 +12,5 @@ export class CourseComponent implements OnInit {
     this.sessionNumber = 0;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

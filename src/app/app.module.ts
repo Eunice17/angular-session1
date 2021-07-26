@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { CourseComponent } from './pages/courses/course/course.component';
 import { NosotrosModule } from './pages/nosotros/nosotros.module';
 import { AppService } from './app.service';
+import { ChangeColorDirective } from './directive/change-color.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AppService } from './app.service';
     CoursesComponent,
     AboutComponent,
     CourseComponent,
+    ChangeColorDirective,
   ],
   imports: [
     BrowserModule,
