@@ -12,7 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import { CourseComponent } from './pages/courses/course/course.component';
 import { NosotrosModule } from './pages/nosotros/nosotros.module';
 import { AppService } from './app.service';
-import { ChangeColorDirective } from './directive/change-color.directive';
+import { TextReducerPipe } from './pipes/text-reducer.pipe';
+import { ChangeColorDirective } from './directives/change-color.directive';
+import { NoIfDirective } from './directives/no-if.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ChangeColorDirective } from './directive/change-color.directive';
     CoursesComponent,
     AboutComponent,
     CourseComponent,
+    TextReducerPipe,
     ChangeColorDirective,
+    NoIfDirective,
   ],
   imports: [
     BrowserModule,
@@ -34,4 +38,4 @@ import { ChangeColorDirective } from './directive/change-color.directive';
   providers: [AppService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
